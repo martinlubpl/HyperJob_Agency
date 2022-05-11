@@ -19,6 +19,10 @@ class HyperJobTestRunner(HyperJobTest):
         HyperJobTest.check_signup,
         HyperJobTest.check_login,
         HyperJobTest.check_logout,
+        # 5 task
+        HyperJobTest.check_create_resume_from_profile,
+        HyperJobTest.check_forbid_to_create_vacancy,
+        HyperJobTest.check_forbid_anonymous_create,
     ]
 
     @dynamic_test(data=funcs)

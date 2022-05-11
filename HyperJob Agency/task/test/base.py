@@ -286,7 +286,6 @@ class HyperJobTest(DjangoTest):
             return CheckResult.correct()
         except urllib.error.URLError:
             return CheckResult.wrong('Cannot connect to the logout page.')
-    
 
     def check_resumes(self) -> CheckResult:
         try:
